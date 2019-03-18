@@ -16,11 +16,15 @@ public class JOptionPaneDemo extends JFrame
 		JOptionPane.showMessageDialog(frame, "Hi, " + name);
 		
 		Object[] options = {"Druid", "Ranger", "Monk"};
-		className = JOptionPane.showOptionDialog(frame, "What class would you like to be?",
+		className = JOptionPane.showOptionDialog(
+				frame, 
+				"What class would you like to be?",
 				"Your Vocation",
 				JOptionPane.YES_NO_CANCEL_OPTION,
 				JOptionPane.QUESTION_MESSAGE,
-				null, options, options[2]);
+				null, 
+				options, 
+				options[2]);
 		 
 		
 		switch(className)
@@ -45,7 +49,8 @@ public class JOptionPaneDemo extends JFrame
 
 			{
 			final JFrame frame = new JFrame();
-		    String favoritePizza = (String) JOptionPane.showInputDialog(frame, 
+		    String favoritePizza = (String) JOptionPane.showInputDialog(
+		    		frame, 
 		            "What type of adventure would you like to experience?",
 		            "Adventure Genre",
 		            JOptionPane.QUESTION_MESSAGE, 
